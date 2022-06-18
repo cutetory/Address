@@ -29,4 +29,4 @@ private void AddrAlgorithmU()
 	}
 }
 ```
-> 
+> ## 주요사항: .NET Framework 4.0대 이상은 Json 쓰면 되고, 아니면 XML써야함
