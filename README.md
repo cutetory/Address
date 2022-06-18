@@ -1,7 +1,8 @@
 # 도로명 주소 C# WindowForm으로 만들기
 > 승인키 만료기간은 2022-06-25 이다.
-> ```
-> private void AddrAlgorithmU()
+> 
+```
+private void AddrAlgorithmU()
 {
 	string temp = m_addr.AddrAlgorithmM();
 
@@ -27,5 +28,5 @@
             foreachIndex++;
 	}
 }
-> ```
+```
 > 
