@@ -1,5 +1,5 @@
 # 도로명 주소 C# WindowForm으로 만들기
-> 승인키 만료기간은 2022-06-25 이다.
+> 승인키 만료기간은 2022-06-25 이다.(행정안전부 opnAPI)
 > 
 ```
 private void AddrAlgorithmU()
