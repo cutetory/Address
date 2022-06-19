@@ -1,7 +1,7 @@
 # 도로명 주소 C# WindowForm으로 만들기
 > 승인키 만료기한은 2022-06-25 이다.(행정안전부 opnAPI)
 
-><img src="/IntroImage.jpg" width="450px" height="300px" title="openAPI주소" ></img><br/>
+> <img src="/IntroImg.jpg" width="450px" height="300px" title="openAPI주소" ></img><br/>
 ```
 	public interface AddrT
 	{
