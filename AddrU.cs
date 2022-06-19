@@ -6,11 +6,13 @@ using System.Data;
 
 namespace Address
 {
-	public partial class AddrU : Form
+	public partial class AddrU : Form, AddrT
 	{
-        private AddrShowD addrShowD = new AddrShowD();
+        //private AddrShowD addrShowD = new AddrShowD();
         private string m_test = string.Empty;
         private Addr m_addr = new Addr();
+		private AddrShowD addrShowD = null;
+
         public AddrU()
 		{
 			InitializeComponent();
@@ -18,7 +20,9 @@ namespace Address
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-            addrShowD.StartPosition = FormStartPosition.CenterScreen;
+			addrShowD = new AddrShowD(this as AddrT);
+
+			addrShowD.StartPosition = FormStartPosition.CenterScreen;
             addrShowD.ShowDialog();
         }
 
@@ -32,5 +36,10 @@ namespace Address
 		{
             DataGrid();
         }
+
+		public void SetData(string Data)
+		{
+			txtInput.Text = Data;
+		}
 	}
 }

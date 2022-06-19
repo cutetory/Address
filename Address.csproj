@@ -118,6 +118,7 @@
     <Compile Include="AddrShowD.Designer.cs">
       <DependentUpon>AddrShowD.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddrT.cs" />
     <Compile Include="AddrU.cs">
       <SubType>Form</SubType>
     </Compile>

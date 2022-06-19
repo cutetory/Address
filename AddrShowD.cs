@@ -18,9 +18,18 @@ namespace Address
 	public partial class AddrShowD : Form
 	{
 		private Addr m_addr = new Addr();
+		private AddrU m_addrU = null;
+		private AddrT m_addrT = null;
 		public AddrShowD()
 		{
 			InitializeComponent();
+			Console.WriteLine("AddrShowD() 생성자");
+		}
+		public AddrShowD(AddrT _addrT)
+		{
+			InitializeComponent();
+			m_addrT = _addrT;
+			Console.WriteLine("AddrShowD(AddrT _addrT) 생성자");
 		}
 		/// <summary>
 		/// Addr클래스에 주소 검색을 위한 키워드 정보 보냄
@@ -29,9 +38,14 @@ namespace Address
 		{
 			m_addr.M_Keyword = txtAddrShowD.Text;
 		}
-
+		/// <summary>
+		/// 확인하고 검색창 종료
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnAddrShowD_Click(object sender, EventArgs e)
 		{
+			m_addrT.SetData(txtAddrShowDResult.Text);
 			this.Close();
 		}
 		/// <summary>
@@ -104,7 +118,7 @@ namespace Address
 		}
 
 		/// <summary>
-		/// ColumnIndex : 0 == 선택, 1 == 도로명주소, 2 == 건물명
+		/// ColumnIndex : -1 == 선택, 0 == 도로명주소, 1 == 건물명
 		/// </summary>
 		/// <example></example>
 		/// <param name="sender"></param>
@@ -137,5 +151,6 @@ namespace Address
 				throw ex;
 			}
 		}
+
 	}
 }
