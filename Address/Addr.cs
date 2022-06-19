@@ -6,6 +6,9 @@ using System.Text;
 
 namespace Address.Address
 {
+	/// <summary>
+	/// 이 폼에서 AddrShowD폼이 ShowDialog형태로 팝업되며, 팝업창의 결과가 최종 출력되는 곳.
+	/// </summary>
     public class Addr
     {
 		private string m_keyword = string.Empty;//부곡로 32-12
@@ -34,54 +37,5 @@ namespace Address.Address
 			}
 			return results;
 		}
-		/*public string AddrAlgorithmU()
-		{
-			string url = "http://apis.data.go.kr/1741000/StanReginCd/getStanReginCdList"; // URL
-			url += "?ServiceKey=" + "3lrloy74j7DsniR33wDUntUY0w75bEolEtxO8M%2FGV32%2BpRlyq4BnVBdFOS%2BwR0VywVK%2BaN%2F0AuR23xRxn%2FQ3FQ%3D%3D"; // Service Key
-			url += "&pageNo=1";
-			url += "&numOfRows=3";
-			url += "&type=json";
-			url += "&locatadd_nm=서울특별시";
-
-			var request = (HttpWebRequest)WebRequest.Create(url);
-			request.Method = "GET";
-
-			string results = string.Empty;
-			HttpWebResponse response;
-			using (response = request.GetResponse() as HttpWebResponse)
-			{
-				StreamReader reader = new StreamReader(response.GetResponseStream());
-				results = reader.ReadToEnd();
-			}
-
-			Console.WriteLine(results);
-			return results;
-		}*/
-		/// <summary>
-		/// 아이피주소 및 주소
-		/// </summary>
-		/// <returns></returns>
-		/*        public string AddrAlgorithmU()
-				{
-					string url = "http://apis.data.go.kr/B551505/whois/ip_address"; // URL
-					url += "?ServiceKey=" + "3lrloy74j7DsniR33wDUntUY0w75bEolEtxO8M%2FGV32%2BpRlyq4BnVBdFOS%2BwR0VywVK%2BaN%2F0AuR23xRxn%2FQ3FQ%3D%3D"; // Service Key
-					//url += "&query=202.30.50.51";
-					url += "&query=59.60.122.148";
-					url += "&answer=json";
-
-					var request = (HttpWebRequest)WebRequest.Create(url);
-					request.Method = "GET";
-
-					string results = string.Empty;
-					HttpWebResponse response;
-					using (response = request.GetResponse() as HttpWebResponse)
-					{
-						StreamReader reader = new StreamReader(response.GetResponseStream());
-						results = reader.ReadToEnd();
-					}
-
-					Console.WriteLine(results);
-					return results;
-				}*/
 	}
 }

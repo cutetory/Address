@@ -16,7 +16,7 @@ namespace Address
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new AddrU());
+			Application.Run(new MainU());
 		}
 	}
 }

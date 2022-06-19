@@ -28,120 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			this.panel3.SuspendLayout();
+			this.pnlAddrInput = new System.Windows.Forms.Panel();
+			this.btnAddr = new System.Windows.Forms.Button();
+			this.txtInput = new System.Windows.Forms.TextBox();
+			this.lblAddr = new System.Windows.Forms.Label();
+			this.pnlGridView = new System.Windows.Forms.Panel();
+			this.dgv = new System.Windows.Forms.DataGridView();
+			this.pnlAddrOutput = new System.Windows.Forms.Panel();
+			this.txtOutput = new System.Windows.Forms.TextBox();
+			this.pnlAddrInput.SuspendLayout();
+			this.pnlGridView.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+			this.pnlAddrOutput.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// panel1
+			// pnlAddrInput
 			// 
-			this.panel1.Controls.Add(this.button1);
-			this.panel1.Controls.Add(this.textBox1);
-			this.panel1.Controls.Add(this.label1);
-			this.panel1.Location = new System.Drawing.Point(61, 62);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(651, 223);
-			this.panel1.TabIndex = 0;
+			this.pnlAddrInput.Controls.Add(this.btnAddr);
+			this.pnlAddrInput.Controls.Add(this.txtInput);
+			this.pnlAddrInput.Controls.Add(this.lblAddr);
+			this.pnlAddrInput.Location = new System.Drawing.Point(61, 62);
+			this.pnlAddrInput.Name = "pnlAddrInput";
+			this.pnlAddrInput.Size = new System.Drawing.Size(651, 223);
+			this.pnlAddrInput.TabIndex = 0;
 			// 
-			// button1
+			// btnAddr
 			// 
-			this.button1.Location = new System.Drawing.Point(511, 182);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.btnAddr.Location = new System.Drawing.Point(511, 182);
+			this.btnAddr.Name = "btnAddr";
+			this.btnAddr.Size = new System.Drawing.Size(75, 23);
+			this.btnAddr.TabIndex = 2;
+			this.btnAddr.Text = "조회";
+			this.btnAddr.UseVisualStyleBackColor = true;
+			this.btnAddr.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// textBox1
+			// txtInput
 			// 
-			this.textBox1.Location = new System.Drawing.Point(82, 121);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(504, 21);
-			this.textBox1.TabIndex = 1;
+			this.txtInput.Location = new System.Drawing.Point(82, 121);
+			this.txtInput.Name = "txtInput";
+			this.txtInput.ReadOnly = true;
+			this.txtInput.Size = new System.Drawing.Size(504, 21);
+			this.txtInput.TabIndex = 1;
 			// 
-			// label1
+			// lblAddr
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(32, 121);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(29, 12);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "주소";
+			this.lblAddr.AutoSize = true;
+			this.lblAddr.Location = new System.Drawing.Point(32, 121);
+			this.lblAddr.Name = "lblAddr";
+			this.lblAddr.Size = new System.Drawing.Size(29, 12);
+			this.lblAddr.TabIndex = 0;
+			this.lblAddr.Text = "주소";
 			// 
-			// panel2
+			// pnlGridView
 			// 
-			this.panel2.Controls.Add(this.dataGridView1);
-			this.panel2.Location = new System.Drawing.Point(71, 315);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(641, 123);
-			this.panel2.TabIndex = 1;
+			this.pnlGridView.Controls.Add(this.dgv);
+			this.pnlGridView.Location = new System.Drawing.Point(21, 306);
+			this.pnlGridView.Name = "pnlGridView";
+			this.pnlGridView.Size = new System.Drawing.Size(717, 278);
+			this.pnlGridView.TabIndex = 1;
 			// 
-			// dataGridView1
+			// dgv
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(3, 0);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowTemplate.Height = 23;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 120);
-			this.dataGridView1.TabIndex = 0;
+			this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgv.BackgroundColor = System.Drawing.Color.White;
+			this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgv.Location = new System.Drawing.Point(3, 0);
+			this.dgv.Name = "dgv";
+			this.dgv.RowTemplate.Height = 23;
+			this.dgv.Size = new System.Drawing.Size(711, 275);
+			this.dgv.TabIndex = 0;
 			// 
-			// panel3
+			// pnlAddrOutput
 			// 
-			this.panel3.Controls.Add(this.textBox2);
-			this.panel3.Location = new System.Drawing.Point(747, 62);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(574, 373);
-			this.panel3.TabIndex = 2;
+			this.pnlAddrOutput.Controls.Add(this.txtOutput);
+			this.pnlAddrOutput.Location = new System.Drawing.Point(747, 62);
+			this.pnlAddrOutput.Name = "pnlAddrOutput";
+			this.pnlAddrOutput.Size = new System.Drawing.Size(574, 373);
+			this.pnlAddrOutput.TabIndex = 2;
 			// 
-			// textBox2
+			// txtOutput
 			// 
-			this.textBox2.Location = new System.Drawing.Point(4, 4);
-			this.textBox2.Multiline = true;
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(567, 366);
-			this.textBox2.TabIndex = 0;
+			this.txtOutput.Location = new System.Drawing.Point(4, 4);
+			this.txtOutput.Multiline = true;
+			this.txtOutput.Name = "txtOutput";
+			this.txtOutput.Size = new System.Drawing.Size(567, 366);
+			this.txtOutput.TabIndex = 0;
 			// 
-			// Form1
+			// AddrU
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1347, 450);
-			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.panel1);
-			this.Name = "Form1";
+			this.ClientSize = new System.Drawing.Size(1720, 596);
+			this.Controls.Add(this.pnlAddrOutput);
+			this.Controls.Add(this.pnlGridView);
+			this.Controls.Add(this.pnlAddrInput);
+			this.Name = "AddrU";
 			this.Text = "Form1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
+			this.Load += new System.EventHandler(this.AddrU_Load);
+			this.pnlAddrInput.ResumeLayout(false);
+			this.pnlAddrInput.PerformLayout();
+			this.pnlGridView.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+			this.pnlAddrOutput.ResumeLayout(false);
+			this.pnlAddrOutput.PerformLayout();
 			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel pnlAddrInput;
+        private System.Windows.Forms.Button btnAddr;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Label lblAddr;
+        private System.Windows.Forms.Panel pnlGridView;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Panel pnlAddrOutput;
+        private System.Windows.Forms.TextBox txtOutput;
     }
 }
 
