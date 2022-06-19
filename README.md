@@ -1,8 +1,8 @@
 # 도로명 주소 C# WindowForm으로 만들기
-> 승인키 만료기간은 2022-06-25 이다.(행정안전부 opnAPI)
+> 승인키 만료기한은 2022-06-25 이다.(행정안전부 opnAPI)
 > 
 ```
-private void AddrAlgorithmU()
+private void AddrAlgorithmM()
 {
 	string temp = m_addr.AddrAlgorithmM();
 
@@ -29,6 +29,6 @@ private void AddrAlgorithmU()
 	}
 }
 ```
-> ## 주요사항: .NET Framework 4.0대 이상은 Json 쓰면 되고, 아니면 XML써야함
+> ### 주요사항: .NET Framework 4.0대 이상은 Json 쓰면 되고, 아니면 XML써야함
 > 참고: https://wookoa.tistory.com/97
 > 
