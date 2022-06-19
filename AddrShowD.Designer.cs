@@ -62,7 +62,7 @@
 			this.panel1.Location = new System.Drawing.Point(12, 12);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(776, 426);
-			this.panel1.TabIndex = 1;
+			this.panel1.TabIndex = 99;
 			// 
 			// txtAddrShowDResult
 			// 
@@ -86,10 +86,11 @@
 			this.btnAddrShowSearch.Location = new System.Drawing.Point(679, 33);
 			this.btnAddrShowSearch.Name = "btnAddrShowSearch";
 			this.btnAddrShowSearch.Size = new System.Drawing.Size(75, 23);
-			this.btnAddrShowSearch.TabIndex = 4;
+			this.btnAddrShowSearch.TabIndex = 2;
 			this.btnAddrShowSearch.Text = "검색";
 			this.btnAddrShowSearch.UseVisualStyleBackColor = true;
 			this.btnAddrShowSearch.Click += new System.EventHandler(this.btnAddrShowSearch_Click);
+			this.btnAddrShowSearch.Enter += new System.EventHandler(this.btnAddrShowSearch_Click);
 			// 
 			// dgvAddrShowD
 			// 
@@ -102,7 +103,7 @@
 			this.dgvAddrShowD.ReadOnly = true;
 			this.dgvAddrShowD.RowTemplate.Height = 23;
 			this.dgvAddrShowD.Size = new System.Drawing.Size(742, 270);
-			this.dgvAddrShowD.TabIndex = 3;
+			this.dgvAddrShowD.TabIndex = 99;
 			this.dgvAddrShowD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAddrShowD_CellClick);
 			// 
 			// lblAddrShowD
@@ -120,6 +121,7 @@
 			this.txtAddrShowD.Name = "txtAddrShowD";
 			this.txtAddrShowD.Size = new System.Drawing.Size(612, 21);
 			this.txtAddrShowD.TabIndex = 1;
+			this.txtAddrShowD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAddrShowD_KeyDown);
 			// 
 			// AddrShowD
 			// 

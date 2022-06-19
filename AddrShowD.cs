@@ -58,6 +58,7 @@ namespace Address
 			dgvAddrShowD.Rows.Clear();
 			EditToKeyword();
 			AddrAlgorithmU();
+			dgvAddrShowD.Focus();
 		}
 		/// <summary>
 		/// 건물명과 도로명주소를 openAPI에서 검색하여 불러오는 기능
@@ -152,5 +153,12 @@ namespace Address
 			}
 		}
 
+		private void txtAddrShowD_KeyDown(object sender, KeyEventArgs e)
+		{
+			if(e.KeyCode == Keys.Enter)
+			{
+				btnAddrShowSearch.Focus();
+			}
+		}
 	}
 }

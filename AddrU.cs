@@ -26,20 +26,14 @@ namespace Address
             addrShowD.ShowDialog();
         }
 
-        private void DataGrid()
-		{
-            dgv.Columns.Add("roadAddr", "도로명주소");
-            dgv.Columns.Add("bdNm", "건물명");
-		}
-
-		private void AddrU_Load(object sender, EventArgs e)
-		{
-            DataGrid();
-        }
-
 		public void SetData(string Data)
 		{
 			txtInput.Text = Data;
+		}
+
+		private void txtInput_Click(object sender, EventArgs e)
+		{
+			button1_Click(sender, e);
 		}
 	}
 }
